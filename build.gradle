@@ -14,8 +14,10 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'org.projectlombok:lombok:1.18.22'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation('org.junit.jupiter:junit-jupiter:5.5.0')
+    testImplementation 'org.projectlombok:lombok:1.18.22'
 }
 
 tasks.named('test') {
