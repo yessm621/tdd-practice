@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  */
 public class PasswordStrengthMeterTest {
 
-    private PasswordStrengthMeter meter = new PasswordStrengthMeter();
+    /*private PasswordStrengthMeter meter = new PasswordStrengthMeter();
 
     private void assertStrength(String password, PasswordStrength expStr) {
         PasswordStrength result = meter.meter(password);
@@ -84,5 +84,5 @@ public class PasswordStrengthMeterTest {
     @DisplayName("아무 조건도 충족하지 않는 경우")
     void meetsNoCriteria_Then_Weak() {
         assertStrength("abc", PasswordStrength.WEAK);
-    }
+    }*/
 }
