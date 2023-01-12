@@ -8,6 +8,11 @@ public class LifecycleTest {
         System.out.println("new LifecycleTest");
     }
 
+    @BeforeAll
+    static void init() {
+        System.out.println("init");
+    }
+
     @BeforeEach
     void setUp() {
         System.out.println("setUp");
@@ -33,5 +38,10 @@ public class LifecycleTest {
     @AfterEach
     void tearDown() {
         System.out.println("tearDown");
+    }
+
+    @AfterAll
+    static void close() {
+        System.out.println("LifecycleTest.close");
     }
 }
